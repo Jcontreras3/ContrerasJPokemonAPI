@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bodyBg">
+    <nav class="bg-white border-gray-200 bg-opacity-60 px-2 sm:px-4 py-4">
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <p class="txtFont text-3xl text-red-700">Jovann's PokeDex</p>
+
+        <div class="flex items-center t">
+          <label for="simple-search" class="sr-only">Search</label>
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            ></div>
+            <input
+              type="text"
+              id="searchPoke"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search"
+              required
+            />
+          </div>
+          <button
+            id="searchBtn"
+            type="submit"
+            class="p-2.5 ml-2 text-sm font-medium text-white bg-red-700 rounded-lg border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+        <button id="rBtn" class="randomBtn txtFont">
+          <img src="./assets/pokeBall.png" alt="pokeBall" />
+          <p class="">Random</p>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="bg-red-600 pokeNameBx">
+        <p id="pokeMonName" class="txtFont pokeNameTxt text-white"></p>
+      </div>
+
+      <div class="columns-1 bg-red-600 abilityBx">
+        <div id="pokeInfo" class=""></div>
+        <div id="pokeMonL" class=""></div>
+      </div>
+
+      <div class="columns-4 gap-5">
+        <div id="pokeImg" class="j"></div>
+        <div id="pokeBackImg" class="j"></div>
+        <div id="pokeShineImg" class="j"></div>
+        <div id="pokeShineBackImg" class="j"></div>
+      </div>
+    </div>
+
+    <script src="./scripts/app.js" type="module"></script>
+  </body>
+</html>
