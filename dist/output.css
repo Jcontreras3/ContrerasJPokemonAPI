@@ -619,11 +619,6 @@ video {
        columns: 4;
 }
 
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -764,7 +759,7 @@ video {
 }
 
 nav {
-  height: 5rem;
+  height: 7rem;
 }
 
 .pokeNameTxt {
